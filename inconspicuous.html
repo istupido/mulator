@@ -29,7 +29,7 @@
         <input type="text" id="coreInput" placeholder="nes" />
         <br>
         <label for="fileInput">Upload ROM:</label>
-        <input type="file" id="fileInput" accept=".nes,.sfc,.smc,.gba,.gb,.gbc,.n64,.zip" />
+        <input type="file" id="fileInput" />
     </div>
 
     <div style="width:100%;height:100%;max-width:100%">
@@ -37,9 +37,9 @@
     </div>
 
     <script>
-        const pathtodata = "https://cdn.emulatorjs.org/latest/data/";
+        const pathtodata = "https://cdn.jsdelivr.net/gh/emulatorjs/emulatorjs@4.0.8/data/";
         const color = "#0097c4";
-        const backgroundImage = "https://allancoding-files.netlify.app/snes-nes/SMB3.jpg";
+        const backgroundImage = "";
         const backgroundColor = "#000";
         const playerElement = "#game";
 
@@ -70,7 +70,7 @@
 
                 // Start Emulator
                 const script = document.createElement("script");
-                script.src = "https://cdn.emulatorjs.org/latest/data/loader.js";
+                script.src = "https://cdn.jsdelivr.net/gh/emulatorjs/emulatorjs@4.0.8/data/loader.js";
                 document.body.appendChild(script);
             };
             reader.readAsArrayBuffer(file);
@@ -78,4 +78,3 @@
     </script>
 </body>
 </html>
-
